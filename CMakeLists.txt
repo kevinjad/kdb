@@ -5,7 +5,7 @@ add_compile_options (-std=c++14)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories (lib/libelfin lib/linenoise include)
-add_executable (kdb lib/linenoise/linenoise.c src/kdb.cpp src/Debugger.cpp include/Debugger.h src/Breakpoint.cpp include/Breakpoint.h)
+add_executable (kdb lib/linenoise/linenoise.c src/kdb.cpp src/Debugger.cpp include/Debugger.h src/Breakpoint.cpp include/Breakpoint.h src/registers.cpp include/registers.h)
 
 add_executable(hello examples/hello.cpp)
 set_target_properties(hello PROPERTIES COMPILE_FLAGS "-g -O0")
